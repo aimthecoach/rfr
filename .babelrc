@@ -1,0 +1,13 @@
+{
+  "presets": ["es2015", "react", "stage-2"],
+  "plugins": ["universal-import", ["styled-components", {
+    "displayName": false,
+    "ssr": true,
+    "preprocess": false
+  }]],
+  "env": {
+    "development": {
+      "plugins": ["react-hot-loader/babel"]
+    }
+  }
+}
